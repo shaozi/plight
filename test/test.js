@@ -1,10 +1,10 @@
-const Light = require('./light.js')
+const Light = require('../lib/light.js')
 
 var light1 = new Light(2, [1, 1])
 var light2 = new Light(4, [2, 2])
 
 light1.start()
-light2.start()
+light2.start(0.5)
 
 setTimeout(
   function () {
